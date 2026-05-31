@@ -15,7 +15,7 @@ Drag and drop your entire `crumbz` folder contents:
    - `js/main.js`
    - `images/` folder (add your photos here!)
 
-## 📸 Adding Your Own Images
+## Adding Your Own Images
 
 Place your photos in the `images/` folder with these filenames:
 - `cupcakes.jpg` — for Custom Cake section
