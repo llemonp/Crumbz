@@ -3,7 +3,7 @@
 An interactive baking website built from a Figma prototype.
 
 ## Pages
-- **Home** — Hero landing page with Get Started button
+- **Home** — landing page with navigation bar and Get Started button
 - **Order Online** — Sidebar category nav with product details and Add to Cart
 - **How to Order** — Info about online vs in-person ordering
 - **Sweets / Gallery** — Product offerings and photo gallery
