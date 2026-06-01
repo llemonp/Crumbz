@@ -1,13 +1,21 @@
 const allPages = ['home','order','how','sweets','contact'];
-const navIds = { order:'nl-order', how:'nl-how', sweets:'nl-sweets', contact:'nl-contact' };
+const navIds = {
+  order:  'nl-order',
+  how:    'nl-how',
+  sweets: 'nl-sweets',
+  contact:'nl-contact'
+};
 
 function goPage(id) {
   allPages.forEach(p => document.getElementById('pg-'+p).classList.remove('act'));
   document.getElementById('pg-'+id).classList.add('act');
+
   Object.values(navIds).forEach(n => document.getElementById(n).classList.remove('act'));
   if (navIds[id]) document.getElementById(navIds[id]).classList.add('act');
+
   const logo = document.getElementById('clogo');
   id === 'home' ? logo.classList.remove('vis') : logo.classList.add('vis');
+
   window.scrollTo(0, 0);
 }
 
