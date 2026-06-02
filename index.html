@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crumbz</title>
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 <body>
-<div class="crumbz">
+<div class="cz">
 
   <nav class="cnav">
     <div class="cnav-logo" id="clogo">Crumbz</div>
@@ -18,36 +18,22 @@
       <li><a onclick="goPage('sweets')" id="nl-sweets">Sweets</a></li>
       <li><a onclick="goPage('contact')" id="nl-contact">Contact</a></li>
     </ul>
-    <div class="cnav-cart" onclick="openCart()">🛒<span class="cbadge" id="cbadge">0</span></div>
+    <div class="cnav-cart" onclick="goPage('cart')">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      <span class="cbadge" id="cbadge">0</span>
+    </div>
   </nav>
 
   <!-- HOME -->
   <div class="pg act" id="pg-home">
-    <div class="hero"><h1>Crumbz</h1></div>
+    <div class="hero"><h1>C r u m b z</h1></div>
     <div class="hero-bot">
       <button class="btn-gs" onclick="goPage('order')">Get Started</button>
-     <div class="socials">
-  <!-- Twitter / X -->
-  <a href="#" aria-label="Twitter">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
-    </svg>
-  </a>
-  <!-- Instagram -->
-  <a href="#" aria-label="Instagram">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-      <circle cx="12" cy="12" r="4.5"/>
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-    </svg>
-  </a>
-  <!-- Discord -->
-  <a href="#" aria-label="Discord">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
-    </svg>
-  </a>
-</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Discord"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg></a>
+      </div>
     </div>
   </div>
 
@@ -65,75 +51,215 @@
         </ul>
       </aside>
       <main class="order-main">
-        <h2 class="order-h">Cakes made for that<br/>special occasion</h2>
-        <div class="prod act" id="cat-custom">
-          <div class="prod-img"><img src="images/cupcakes.jpg" alt="Custom Cake"/></div>
-          <div class="prod-info">
-            <p class="prod-desc">Here at Crumbz we value quality over quantity. We are based in France slowly expanding across the United States. Ingredients are carefully selected and imported from France. You can expect the same quality as our stores back in France.</p>
-            <p class="prod-price">Starting at $45</p>
-            <button class="btn-cart" onclick="addCart('Custom Cake',45)">Add to Cart</button>
-            <a class="read-m" href="#">Read more</a>
+
+        <!-- CUSTOM CAKE -->
+        <div class="prod-section act" id="ps-custom">
+          <div id="grid-custom">
+            <h2 class="prod-title">Custom Cakes</h2>
+            <p class="prod-desc">Our classic homemade cakes come plain and double layered, giving you the freedom to choose flavor, decorate, and personalize them however you'd like.</p>
+            <div class="prod-grid">
+              <div class="prod-card" onclick="openDetail('custom6')">
+                <div class="prod-card-img"><img src="images/cake.jpg" alt="Plain 6 inch" onerror="this.style.display='none';this.parentElement.style.background='#f5d5d0';"/></div>
+                <div class="prod-card-label">$30 Plain 6"</div>
+              </div>
+              <div class="prod-card" onclick="openDetail('custom8')">
+                <div class="prod-card-img">
+                  <img src="images/cake2.jpg" alt="Plain 8 inch" onerror="this.style.display='none';this.parentElement.style.background='#e8c4bc';"/>
+                  <div class="oos-overlay"><span class="oos-label">OUT OF<br/>STOCK</span></div>
+                </div>
+                <div class="prod-card-label">$42 Plain 8"</div>
+              </div>
+              <div class="prod-card" onclick="openDetail('custom12')">
+                <div class="prod-card-img">
+                  <img src="images/cake3.jpg" alt="Plain 12 inch" onerror="this.style.display='none';this.parentElement.style.background='#ddb8b0';"/>
+                  <div class="oos-overlay"><span class="oos-label">OUT OF<br/>STOCK</span></div>
+                </div>
+                <div class="prod-card-label">$50 Plain 12"</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CUSTOMIZATION VIEW -->
+          <div class="detail-view" id="detail-view">
+            <button class="back-btn" onclick="closeDetail()">Back</button>
+            <div class="detail-layout">
+
+              <!-- LEFT: OPTIONS -->
+              <div class="custom-panel">
+                <p class="custom-title">Basic</p>
+
+                <div class="select-row">
+                  <label>Buttercream</label>
+                  <div class="hover-select">
+                    <button class="hs-trigger" id="sel-bc">Select</button>
+                    <div class="hs-menu">
+                      <button onclick="pick('bc','Vanilla')">Vanilla</button>
+                      <button onclick="pick('bc','Chocolate')">Chocolate</button>
+                      <button onclick="pick('bc','Strawberry')">Strawberry</button>
+                      <button onclick="pick('bc','Matcha')">Matcha</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-row">
+                  <label>Filling</label>
+                  <div class="hover-select">
+                    <button class="hs-trigger" id="sel-fill">Select</button>
+                    <div class="hs-menu">
+                      <button onclick="pick('fill','Strawberry Jam')">Strawberry Jam</button>
+                      <button onclick="pick('fill','Lemon Curd')">Lemon Curd</button>
+                      <button onclick="pick('fill','Nutella')">Nutella</button>
+                      <button onclick="pick('fill','Plain')">Plain</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-row">
+                  <label>Base 1</label>
+                  <div class="hover-select">
+                    <button class="hs-trigger" id="sel-b1">Select</button>
+                    <div class="hs-menu">
+                      <button onclick="pick('b1','Vanilla')">Vanilla</button>
+                      <button onclick="pick('b1','Chocolate')">Chocolate</button>
+                      <button onclick="pick('b1','Red Velvet')">Red Velvet</button>
+                      <button onclick="pick('b1','Lemon')">Lemon</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="select-row">
+                  <label>Base 2</label>
+                  <div class="hover-select">
+                    <button class="hs-trigger" id="sel-b2">Select</button>
+                    <div class="hs-menu">
+                      <button onclick="pick('b2','Vanilla')">Vanilla</button>
+                      <button onclick="pick('b2','Chocolate')">Chocolate</button>
+                      <button onclick="pick('b2','Red Velvet')">Red Velvet</button>
+                      <button onclick="pick('b2','Lemon')">Lemon</button>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="panel-divider"/>
+
+                <p class="frosting-lbl">Frosting pen</p>
+                <div class="tool-btns">
+                  <button class="tool-btn act" id="btn-pen" onclick="setTool('pen')">✏️ Draw</button>
+                  <button class="tool-btn" id="btn-erase" onclick="setTool('erase')">⬜ Erase</button>
+                </div>
+                <div class="swatches" id="swatches">
+                  <div class="swatch sel" style="background:#fff5f0;" onclick="setColor('#fff5f0',this)"></div>
+                  <div class="swatch" style="background:#f9a8a8;" onclick="setColor('#f9a8a8',this)"></div>
+                  <div class="swatch" style="background:#c4a77d;" onclick="setColor('#c4a77d',this)"></div>
+                  <div class="swatch" style="background:#5a3e2b;" onclick="setColor('#5a3e2b',this)"></div>
+                  <div class="swatch" style="background:#a8d8a8;" onclick="setColor('#a8d8a8',this)"></div>
+                  <div class="swatch" style="background:#b39ddb;" onclick="setColor('#b39ddb',this)"></div>
+                </div>
+                <div class="brush-row">
+                  <label>Size</label>
+                  <input type="range" min="2" max="18" value="5" id="brush-sz" step="1" oninput="setBrush(this.value)"/>
+                  <span id="brush-sz-out">5</span>
+                </div>
+
+                <hr class="panel-divider"/>
+
+                <p class="decor-lbl">Decor — drag onto cake</p>
+                <div class="decor-tray" id="decor-tray">
+                  <span class="decor-chip" draggable="true" data-decor="🌼">🌼</span>
+                  <span class="decor-chip" draggable="true" data-decor="🌸">🌸</span>
+                  <span class="decor-chip" draggable="true" data-decor="🍓">🍓</span>
+                  <span class="decor-chip" draggable="true" data-decor="🍒">🍒</span>
+                  <span class="decor-chip" draggable="true" data-decor="🫐">🫐</span>
+                  <span class="decor-chip" draggable="true" data-decor="⭐">⭐</span>
+                  <span class="decor-chip" draggable="true" data-decor="🎀">🎀</span>
+                  <span class="decor-chip" draggable="true" data-decor="1️⃣">1️⃣</span>
+                  <span class="decor-chip" draggable="true" data-decor="2️⃣">2️⃣</span>
+                  <span class="decor-chip" draggable="true" data-decor="3️⃣">3️⃣</span>
+                </div>
+              </div>
+
+              <!-- CENTER: CANVAS -->
+              <div class="canvas-wrap">
+                <p class="canvas-title">Customization</p>
+                <div class="canvas-container" id="canvas-container">
+                  <div class="cake-bg">
+                    <img src="images/cake.jpg" alt="Cake" onerror="this.style.display='none';"/>
+                  </div>
+                  <canvas id="draw-canvas" width="280" height="280"></canvas>
+                </div>
+                <div class="canvas-actions">
+                  <button class="action-btn" onclick="undoLast()">↩ Undo</button>
+                  <button class="action-btn" onclick="clearAll()">✕ Clear all</button>
+                </div>
+                <div id="toast" class="toast"></div>
+              </div>
+
+              <!-- RIGHT: PRICE + QTY -->
+              <div class="price-panel">
+                <p class="price-title" id="detail-price-title">$30 Plain 6"</p>
+                <p class="price-item-id">Item 123</p>
+                <div class="qty-row">
+                  <button class="qty-btn" onclick="chgQty(-1)">−</button>
+                  <span class="qty-n" id="qty-n">1</span>
+                  <button class="qty-btn" onclick="chgQty(1)">+</button>
+                </div>
+                <button class="done-btn" onclick="addToCart()">Done</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="prod" id="cat-cake">
-          <div class="prod-img"><img src="images/cake.jpg" alt="Cake"/></div>
-          <div class="prod-info">
-            <p class="prod-desc">Simple cakes with simple ingredients. Baked fresh daily with love and care using only the finest imported French ingredients.</p>
-            <p class="prod-price">Starting at $35</p>
-            <button class="btn-cart" onclick="addCart('Cake',35)">Add to Cart</button>
-            <a class="read-m" href="#">Read more</a>
+
+        <!-- CAKE -->
+        <div class="prod-section" id="ps-cake">
+          <h2 class="prod-title">Cake</h2>
+          <p class="prod-desc">Simple cakes with simple ingredients. Baked fresh daily.</p>
+          <div class="prod-grid">
+            <div class="prod-card">
+              <div class="prod-card-img"><img src="images/cake.jpg" alt="Cake" onerror="this.style.display='none';this.parentElement.style.background='#f5d5d0';"/></div>
+              <div class="prod-card-label">$35 Classic</div>
+            </div>
           </div>
         </div>
-        <div class="prod" id="cat-cookies">
-          <div class="prod-img"><img src="images/cookies.jpg" alt="Cookies"/></div>
-          <div class="prod-info">
-            <p class="prod-desc">Our dark chocolate chip and white chocolate chip matcha cookies. Perfect alone or to be shared! First come, first serve basis.</p>
-            <p class="prod-price">$4 each / $20 dozen</p>
-            <button class="btn-cart" onclick="addCart('Cookies (dozen)',20)">Add to Cart</button>
-            <a class="read-m" href="#">Read more</a>
+
+        <!-- COOKIES -->
+        <div class="prod-section" id="ps-cookies">
+          <h2 class="prod-title">Cookies</h2>
+          <p class="prod-desc">Dark chocolate chip and matcha cookies. First come, first serve.</p>
+          <div class="prod-grid">
+            <div class="prod-card">
+              <div class="prod-card-img"><img src="images/cookies.jpg" alt="Cookies" onerror="this.style.display='none';this.parentElement.style.background='#e8c4a0';"/></div>
+              <div class="prod-card-label">$4 each / $20 dozen</div>
+            </div>
           </div>
         </div>
-        <div class="prod" id="cat-cinnamon">
-          <div class="prod-img"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls"/></div>
-          <div class="prod-info">
-            <p class="prod-desc">A light and fluffy dough rolled with homemade butter and freshly ground cinnamon. Baked and topped with a powdered sugar glaze.</p>
-            <p class="prod-price">$6 each / $28 half-dozen</p>
-            <button class="btn-cart" onclick="addCart('Cinnamon Rolls (half-dozen)',28)">Add to Cart</button>
-            <a class="read-m" href="#">Read more</a>
+
+        <!-- CINNAMON ROLLS -->
+        <div class="prod-section" id="ps-cinnamon">
+          <h2 class="prod-title">Cinnamon Rolls</h2>
+          <p class="prod-desc">Light and fluffy, topped with powdered sugar glaze.</p>
+          <div class="prod-grid">
+            <div class="prod-card">
+              <div class="prod-card-img"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls" onerror="this.style.display='none';this.parentElement.style.background='#e8d4b0';"/></div>
+              <div class="prod-card-label">$6 each / $28 half-dozen</div>
+            </div>
           </div>
         </div>
+
       </main>
     </div>
     <footer class="pg-footer">
-      <div class="socials">
-
-        <!-- X -->
-        <a href="#" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
-          </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="4.5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-
-        <!-- Discord -->
-        <a href="#" aria-label="Discord">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
-          </svg>
-        </a>
-
-      </div>
+      <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg></a>
     </footer>
+  </div>
+
+  <!-- CART / ORDER SUMMARY -->
+  <div class="pg" id="pg-cart">
+    <div class="pink-bar"></div>
+    <div class="summary-wrap">
+      <button class="back-btn" onclick="goPage('order')">Back</button>
+      <h2 class="summary-title">Order Summary</h2>
+      <div id="cart-content"></div>
+      <button class="checkout-btn" id="checkout-btn" style="display:none;" onclick="alert('Proceeding to checkout! 🎂')">Checkout</button>
+    </div>
   </div>
 
   <!-- HOW TO ORDER -->
@@ -147,38 +273,13 @@
       <p class="cb">In-person orders come with free consultants for advice and guidance from one of our professional bakers to ensure your vision is heard.</p>
     </div>
     <footer class="pg-footer">
-      <div class="socials">
-
-        <!-- X -->
-        <a href="#" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
-          </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="4.5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-
-        <!-- Discord -->
-        <a href="#" aria-label="Discord">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
-          </svg>
-        </a>
-
-      </div>
+      <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg></a>
     </footer>
   </div>
 
-  <!-- SWEETS / GALLERY -->
+  <!-- SWEETS -->
   <div class="pg" id="pg-sweets">
     <div class="pink-bar"></div>
     <div class="content">
@@ -188,49 +289,15 @@
       <p class="cb">Please keep in mind that our cookies and cinnamon rolls are on a first come first serve basis.</p>
       <h3 class="gallery-t">The Gallery</h3>
       <div class="gallery">
-        <div class="gitem">
-          <div class="gi"><img src="images/cake.jpg" alt="Cake"/></div>
-          <p>Simple cakes with simple ingredients.</p>
-        </div>
-        <div class="gitem">
-          <div class="gi"><img src="images/cookies.jpg" alt="Cookies"/></div>
-          <p>Our dark chocolate chip and white chocolate chip matcha cookies. Perfect alone or to be shared!</p>
-        </div>
-        <div class="gitem">
-          <div class="gi"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls"/></div>
-          <p>A light and fluffy dough rolled with homemade butter and freshly ground cinnamon, topped with a powdered sugar glaze.</p>
-        </div>
+        <div class="gitem"><div class="gi"><img src="images/cake.jpg" alt="Cake" onerror="this.style.display='none';"/></div><p>Simple cakes with simple ingredients.</p></div>
+        <div class="gitem"><div class="gi" style="background:#f5e6d0;"><img src="images/cookies.jpg" alt="Cookies" onerror="this.style.display='none';"/></div><p>Our dark chocolate chip and matcha cookies. Perfect alone or to be shared!</p></div>
+        <div class="gitem"><div class="gi" style="background:#fce8d5;"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls" onerror="this.style.display='none';"/></div><p>Light and fluffy cinnamon rolls topped with a powdered sugar glaze.</p></div>
       </div>
     </div>
     <footer class="pg-footer">
-      <div class="socials">
-
-        <!-- X -->
-        <a href="#" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
-          </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="4.5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-
-        <!-- Discord -->
-        <a href="#" aria-label="Discord">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
-          </svg>
-        </a>
-
-      </div>
+      <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg></a>
     </footer>
   </div>
 
@@ -276,52 +343,22 @@
       </div>
     </div>
     <footer class="pg-footer">
-      <div class="socials">
-
-        <!-- X -->
-        <a href="#" aria-label="Twitter">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
-          </svg>
-        </a>
-
-        <!-- Instagram -->
-        <a href="#" aria-label="Instagram">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="4.5"/>
-            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-          </svg>
-        </a>
-
-        <!-- Discord -->
-        <a href="#" aria-label="Discord">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
-          </svg>
-        </a>
-
-      </div>
+      <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/></svg></a>
     </footer>
   </div>
 
 </div>
 
-<!-- CART DRAWER -->
-<div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
-<div class="cart-drawer" id="cart-drawer">
-  <div class="cart-hdr">
-    <h3>Your Order</h3>
-    <button class="cart-x" onclick="closeCart()">×</button>
-  </div>
-  <div class="cart-items-list" id="cart-list">
-    <p class="cart-empty-msg">Your cart is empty.</p>
-  </div>
-  <div class="cart-ftr">
-    <div class="cart-tot">Total: <span id="cart-total-val">$0</span></div>
-    <button class="btn-ckout" onclick="checkout()">Checkout</button>
+<!-- DELETE POPUP -->
+<div class="delete-overlay" id="delete-overlay">
+  <div class="delete-box">
+    <p>Are you sure you want<br/>to delete this order?</p>
+    <div class="delete-actions">
+      <button onclick="cancelDelete()">No</button>
+      <button onclick="confirmDelete()">Yes</button>
+    </div>
   </div>
 </div>
 
