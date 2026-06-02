@@ -34,6 +34,22 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .socials a:nth-child(3) { color: #5865F2; }
 .socials a:hover { opacity: .7; }
 
+/* position socials footer */
+.pg {
+  display: none;
+  min-height: calc(100vh - 50px);
+  flex-direction: column;
+}
+
+.pg.act {
+  display: flex;
+}
+
+/* push footer down */
+.pg-footer {
+  margin-top: auto;
+}
+
 .prod-card.disabled {
   cursor: not-allowed;
   opacity: 0.6;
