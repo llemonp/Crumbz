@@ -35,10 +35,17 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .socials a:hover { opacity: .7; }
 
 .prod-card.disabled {
-  pointer-events: none;
-  opacity: 0.6;
   cursor: not-allowed;
-  position: relative;
+  opacity: 0.6;
+}
+
+.prod-card.disabled:hover .prod-card-img img {
+  transform: none; /* stops hover zoom */
+}
+
+/* HARD BLOCK interaction */
+.prod-card.disabled {
+  pointer-events: none;
 }
 
 /* ORDER */
