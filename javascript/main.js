@@ -6,6 +6,19 @@ const navIds = {
   contact:'nl-contact'
 };
 
+function goPage(page) {
+  // hide all pages
+  document.querySelectorAll('.pg').forEach(p => {
+    p.classList.remove('act');
+  });
+
+  // show selected page
+  const target = document.getElementById('pg-' + page);
+  if (target) {
+    target.classList.add('act');
+  }
+}
+
 function goPage(id) {
   allPages.forEach(p => document.getElementById('pg-'+p).classList.remove('act'));
   document.getElementById('pg-'+id).classList.add('act');
