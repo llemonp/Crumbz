@@ -1,197 +1,242 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crumbz</title>
-
   <link rel="stylesheet" href="./css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 <div class="crumbz">
 
-  <!-- NAV -->
-
   <nav class="cnav">
     <div class="cnav-logo" id="clogo">Crumbz</div>
-
-```
-<ul class="cnav-links">
-  <li><a href="#" onclick="goPage('order')">Order Online</a></li>
-  <li><a href="#" onclick="goPage('how')">How to Order</a></li>
-  <li><a href="#" onclick="goPage('sweets')">Sweets</a></li>
-  <li><a href="#" onclick="goPage('contact')">Contact</a></li>
-</ul>
-
-<div class="cnav-cart" onclick="openCart()">
-  🛒 <span class="cbadge" id="cbadge">0</span>
-</div>
-```
-
+    <ul class="cnav-links">
+      <li><a onclick="goPage('order')" id="nl-order">Order Online</a></li>
+      <li><a onclick="goPage('how')" id="nl-how">How to Order</a></li>
+      <li><a onclick="goPage('sweets')" id="nl-sweets">Sweets</a></li>
+      <li><a onclick="goPage('contact')" id="nl-contact">Contact</a></li>
+    </ul>
+    <div class="cnav-cart" onclick="openCart()">🛒<span class="cbadge" id="cbadge">0</span></div>
   </nav>
 
   <!-- HOME -->
-
   <div class="pg act" id="pg-home">
     <div class="hero"><h1>Crumbz</h1></div>
-
-```
-<div class="hero-bot">
-  <button class="btn-gs" onclick="goPage('order')">Get Started</button>
-
-  <div class="socials">
-    <a href="#" aria-label="Twitter">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Z"/>
-      </svg>
-    </a>
-
-    <a href="#" aria-label="Instagram">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-        <rect x="2" y="2" width="20" height="20" rx="5"/>
-        <circle cx="12" cy="12" r="4.5"/>
-        <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
-      </svg>
-    </a>
-
-    <a href="#" aria-label="Discord">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25A19.74 19.74 0 0 0 3.677 4.37C.533 9.046-.32 13.58.099 18.057a19.9 19.9 0 0 0 5.993 3.03c.36-.698.772-1.362 1.225-1.993a13.1 13.1 0 0 1-1.872-.892c-.077-.052-.08-.128-.008-.128 3.928 1.793 8.18 1.793 12.062 0 .072 0 .069.076-.006.127a12.3 12.3 0 0 1-1.873.892c.453.631.865 1.295 1.225 1.993a19.8 19.8 0 0 0 6.002-3.03C25.147 13.58 23.81 9.046 20.317 4.37Z"/>
-      </svg>
-    </a>
-  </div>
+    <div class="hero-bot">
+      <button class="btn-gs" onclick="goPage('order')">Get Started</button>
+     <div class="socials">
+  <!-- Twitter / X -->
+  <a href="#" aria-label="Twitter">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
+    </svg>
+  </a>
+  <!-- Instagram -->
+  <a href="#" aria-label="Instagram">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+      <circle cx="12" cy="12" r="4.5"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+    </svg>
+  </a>
+  <!-- Discord -->
+  <a href="#" aria-label="Discord">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
+    </svg>
+  </a>
 </div>
-```
-
+    </div>
   </div>
 
-  <!-- ORDER -->
-
+  <!-- ORDER ONLINE -->
   <div class="pg" id="pg-order">
     <div class="pink-bar"></div>
-
-<div class="order-wrap">
-  <aside class="sidebar">
-    <p class="sidebar-lbl">Sweet Baked Goods</p>
-
-    <ul class="cat-list">
-      <li class="act" onclick="showCat('custom',this)">Custom Cake</li>
-      <li onclick="showCat('cake',this)">Cake</li>
-      <li onclick="showCat('cookies',this)">Cookies</li>
-      <li onclick="showCat('cinnamon',this)">Cinnamon Rolls</li>
-    </ul>
-  </aside>
-
-  <main class="order-main">
-    <h2 class="order-h">Cakes made for that<br/>special occasion</h2>
-
-    <div class="prod act" id="cat-custom">
-      <div class="prod-img"><img src="images/cupcakes.jpg" alt="Custom Cake"/></div>
-      <div class="prod-info">
-        <p class="prod-desc">High-quality baked goods made with imported ingredients.</p>
-        <p class="prod-price">Starting at $45</p>
-        <button class="btn-cart" onclick="addCart('Custom Cake',45)">Add to Cart</button>
-      </div>
+    <div class="order-wrap">
+      <aside class="sidebar">
+        <p class="sidebar-lbl">Sweet Baked Goods</p>
+        <ul class="cat-list">
+          <li class="act" onclick="showCat('custom',this)">Custom Cake</li>
+          <li onclick="showCat('cake',this)">Cake</li>
+          <li onclick="showCat('cookies',this)">Cookies</li>
+          <li onclick="showCat('cinnamon',this)">Cinnamon Rolls</li>
+        </ul>
+      </aside>
+      <main class="order-main">
+        <h2 class="order-h">Cakes made for that<br/>special occasion</h2>
+        <div class="prod act" id="cat-custom">
+          <div class="prod-img"><img src="images/cupcakes.jpg" alt="Custom Cake"/></div>
+          <div class="prod-info">
+            <p class="prod-desc">Here at Crumbz we value quality over quantity. We are based in France slowly expanding across the United States. Ingredients are carefully selected and imported from France. You can expect the same quality as our stores back in France.</p>
+            <p class="prod-price">Starting at $45</p>
+            <button class="btn-cart" onclick="addCart('Custom Cake',45)">Add to Cart</button>
+            <a class="read-m" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="prod" id="cat-cake">
+          <div class="prod-img"><img src="images/cake.jpg" alt="Cake"/></div>
+          <div class="prod-info">
+            <p class="prod-desc">Simple cakes with simple ingredients. Baked fresh daily with love and care using only the finest imported French ingredients.</p>
+            <p class="prod-price">Starting at $35</p>
+            <button class="btn-cart" onclick="addCart('Cake',35)">Add to Cart</button>
+            <a class="read-m" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="prod" id="cat-cookies">
+          <div class="prod-img"><img src="images/cookies.jpg" alt="Cookies"/></div>
+          <div class="prod-info">
+            <p class="prod-desc">Our dark chocolate chip and white chocolate chip matcha cookies. Perfect alone or to be shared! First come, first serve basis.</p>
+            <p class="prod-price">$4 each / $20 dozen</p>
+            <button class="btn-cart" onclick="addCart('Cookies (dozen)',20)">Add to Cart</button>
+            <a class="read-m" href="#">Read more</a>
+          </div>
+        </div>
+        <div class="prod" id="cat-cinnamon">
+          <div class="prod-img"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls"/></div>
+          <div class="prod-info">
+            <p class="prod-desc">A light and fluffy dough rolled with homemade butter and freshly ground cinnamon. Baked and topped with a powdered sugar glaze.</p>
+            <p class="prod-price">$6 each / $28 half-dozen</p>
+            <button class="btn-cart" onclick="addCart('Cinnamon Rolls (half-dozen)',28)">Add to Cart</button>
+            <a class="read-m" href="#">Read more</a>
+          </div>
+        </div>
+      </main>
     </div>
+    <footer class="pg-footer">
+      <div class="socials">
 
-    <div class="prod" id="cat-cake">
-      <div class="prod-img"><img src="images/cake.jpg" alt="Cake"/></div>
-      <div class="prod-info">
-        <p class="prod-desc">Fresh baked cakes made daily.</p>
-        <p class="prod-price">Starting at $35</p>
-        <button class="btn-cart" onclick="addCart('Cake',35)">Add to Cart</button>
+        <!-- X -->
+        <a href="#" aria-label="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622Zm-1.161 17.52h1.833L7.084 4.126H5.117Z"/>
+          </svg>
+        </a>
+
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
+        <!-- Discord -->
+        <a href="#" aria-label="Discord">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.022.015.043.032.053a19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03ZM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"/>
+          </svg>
+        </a>
+
       </div>
-    </div>
+    </footer>
 
-    <div class="prod" id="cat-cookies">
-      <div class="prod-img"><img src="images/cookies.jpg" alt="Cookies"/></div>
-      <div class="prod-info">
-        <p class="prod-desc">Chocolate chip and matcha cookies.</p>
-        <p class="prod-price">$20 per dozen</p>
-        <button class="btn-cart" onclick="addCart('Cookies',20)">Add to Cart</button>
-      </div>
-    </div>
-
-    <div class="prod" id="cat-cinnamon">
-      <div class="prod-img"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls"/></div>
-      <div class="prod-info">
-        <p class="prod-desc">Soft cinnamon rolls with glaze.</p>
-        <p class="prod-price">$28 half-dozen</p>
-        <button class="btn-cart" onclick="addCart('Cinnamon Rolls',28)">Add to Cart</button>
-      </div>
-    </div>
-
-  </main>
-</div>
-  </div>
-
-  <!-- HOW -->
-
+  <!-- HOW TO ORDER -->
   <div class="pg" id="pg-how">
     <div class="pink-bar"></div>
     <div class="content">
-      <h2>How To Order</h2>
-      <p>Choose items online and add them to your cart.</p>
-      <p>Custom orders require 2 weeks notice.</p>
+      <h2 class="ct">How To Order</h2>
+      <p class="cb">Currently we offer in online and in-person services. Just select the 'Order Online' tab, and browse our selection! Our system is designed for your convenience whether you're looking for sweets for special occasions or not. Feel free to contact us for any questions or concerns.</p>
+      <h3 class="cs">Online or In-person?</h3>
+      <p class="cb">Online orders are quick and easy. We provide a customization option for cakes, as well as access to all of our other sweets. Please keep in mind custom orders must be submitted 2 weeks prior to event date.</p>
+      <p class="cb">In-person orders come with free consultants for advice and guidance from one of our professional bakers to ensure your vision is heard.</p>
     </div>
+    <footer class="pg-footer"><div class="socials"><a href="#">🐦</a><a href="#">📸</a><a href="#">💬</a></div></footer>
   </div>
 
-  <!-- SWEETS -->
-
+  <!-- SWEETS / GALLERY -->
   <div class="pg" id="pg-sweets">
     <div class="pink-bar"></div>
-
-<div class="content">
-  <h2>What do we offer?</h2>
-  <p>Cakes, cookies, and cinnamon rolls made fresh daily.</p>
-
-  <div class="gallery">
-    <div class="gitem"><img src="images/cake.jpg"/><p>Cakes</p></div>
-    <div class="gitem"><img src="images/cookies.jpg"/><p>Cookies</p></div>
-    <div class="gitem"><img src="images/cinnamonrolls.jpg"/><p>Cinnamon Rolls</p></div>
-  </div>
-</div>
-
+    <div class="content">
+      <h2 class="ct">What do we offer?</h2>
+      <p class="cb">Crumbz currently offers cakes, cookies, and cinnamon rolls. Our main focus is put on cake production, but much of our love is also put into the cookies and cinnamon rolls we offer! Everything is baked fresh daily.</p>
+      <p class="cb">We offer cakes with set designs, and customization cakes to your liking.</p>
+      <p class="cb">Please keep in mind that our cookies and cinnamon rolls are on a first come first serve basis.</p>
+      <h3 class="gallery-t">The Gallery</h3>
+      <div class="gallery">
+        <div class="gitem">
+          <div class="gi"><img src="images/cake.jpg" alt="Cake"/></div>
+          <p>Simple cakes with simple ingredients.</p>
+        </div>
+        <div class="gitem">
+          <div class="gi"><img src="images/cookies.jpg" alt="Cookies"/></div>
+          <p>Our dark chocolate chip and white chocolate chip matcha cookies. Perfect alone or to be shared!</p>
+        </div>
+        <div class="gitem">
+          <div class="gi"><img src="images/cinnamonrolls.jpg" alt="Cinnamon Rolls"/></div>
+          <p>A light and fluffy dough rolled with homemade butter and freshly ground cinnamon, topped with a powdered sugar glaze.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="pg-footer"><div class="socials"><a href="#">🐦</a><a href="#">📸</a><a href="#">💬</a></div></footer>
   </div>
 
   <!-- CONTACT -->
-
   <div class="pg" id="pg-contact">
     <div class="pink-bar"></div>
-
-<div class="contact-wrap">
-  <div class="contact-l">
-    <h2>Store Hours</h2>
-    <p>Mon–Thu: 8AM–3PM</p>
-    <p>Fri–Sun: Closed</p>
+    <div class="contact-wrap">
+      <div class="contact-l">
+        <h2 class="sh-title">Store Hours</h2>
+        <table class="hours-t">
+          <tr><td>Sunday:</td><td>8AM – 12PM</td></tr>
+          <tr><td>Monday:</td><td>8AM – 3PM</td></tr>
+          <tr><td>Tuesday:</td><td>8AM – 3PM</td></tr>
+          <tr><td>Wednesday:</td><td>8AM – 3PM</td></tr>
+          <tr><td>Thursday:</td><td>8AM – 3PM</td></tr>
+          <tr><td>Friday:</td><td>CLOSED</td></tr>
+          <tr><td>Saturday:</td><td>CLOSED</td></tr>
+        </table>
+        <div class="cdet">
+          <div class="cdet-item"><span>📞</span><span>+1012 3456 789</span></div>
+          <div class="cdet-item"><span>✉️</span><span>crumb@gmail.com</span></div>
+          <div class="cdet-item"><span>📍</span><span>3334 Midway Dr<br/>San Diego, CA 92100</span></div>
+        </div>
+      </div>
+      <div class="contact-r">
+        <div class="form-row">
+          <div class="fg"><label>First Name</label><input type="text" placeholder="Austin"/></div>
+          <div class="fg"><label>Last Name</label><input type="text" placeholder="Doe"/></div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label>Email</label><input type="email" placeholder="Austoe@gmail.com"/></div>
+          <div class="fg"><label>Phone Number</label><input type="tel" placeholder="123 456 7890"/></div>
+        </div>
+        <div class="fg">
+          <label>Select Subject?</label>
+          <div class="rg">
+            <label><input type="radio" name="subj" value="order"/> Order</label>
+            <label><input type="radio" name="subj" value="inquiry"/> General Inquiry</label>
+          </div>
+        </div>
+        <div class="fg"><label>Message</label><textarea placeholder="Write your message.."></textarea></div>
+        <button class="btn-send" onclick="sendMsg()">Send Message</button>
+      </div>
+    </div>
+    <footer class="pg-footer"><div class="socials"><a href="#">🐦</a><a href="#">📸</a><a href="#">💬</a></div></footer>
   </div>
 
-  <div class="contact-r">
-    <input placeholder="First Name"/>
-    <input placeholder="Email"/>
-    <textarea placeholder="Message"></textarea>
-    <button onclick="sendMsg()">Send</button>
-  </div>
 </div>
 
-  </div>
-
-</div>
-
-<!-- CART -->
-
+<!-- CART DRAWER -->
 <div class="cart-overlay" id="cart-overlay" onclick="closeCart()"></div>
-
 <div class="cart-drawer" id="cart-drawer">
-  <h3>Your Order</h3>
-  <div id="cart-list"></div>
-  <button onclick="checkout()">Checkout</button>
+  <div class="cart-hdr">
+    <h3>Your Order</h3>
+    <button class="cart-x" onclick="closeCart()">×</button>
+  </div>
+  <div class="cart-items-list" id="cart-list">
+    <p class="cart-empty-msg">Your cart is empty.</p>
+  </div>
+  <div class="cart-ftr">
+    <div class="cart-tot">Total: <span id="cart-total-val">$0</span></div>
+    <button class="btn-ckout" onclick="checkout()">Checkout</button>
+  </div>
 </div>
 
 <script src="javascript/main.js"></script>
-
 </body>
 </html>
