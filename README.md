@@ -3,11 +3,11 @@
 An interactive baking website built from a Figma prototype.
 
 ## Pages
-- **Home** — landing page with navigation bar and Get Started button
-- **Order Online** — Sidebar category nav with product details and Add to Cart
-- **How to Order** — Info about online vs in-person ordering
-- **Sweets / Gallery** — Product offerings and photo gallery
-- **Contact** — Store hours, contact form, and address
+- **Home**: landing page with navigation bar and Get Started button
+- **Order Online**: Sidebar category nav with product details and Add to Cart
+- **How to Order**: Info about online vs in-person ordering
+- **Sweets / Gallery**: Product offerings and photo gallery
+- **Contact**: Store hours, contact form, and address
 
 Drag and drop your entire `crumbz` folder contents:
    - `index.html`
@@ -27,11 +27,11 @@ The site gracefully handles missing images with a pink placeholder color.
 
 ## Customizing
 
-Edit `css/style.css` — look for the `:root` variables at the top:
+Edit `css/style.css` look for the `:root` variables at the top:
 ```css
---pink-hero: #f9ddd9;    /* hero background */
---pink-nav: #e8a89c;     /* nav bar pink */
---pink-btn: #f0c4bc;     /* button color */
+pink-hero: #f9ddd9;    /* hero background */
+pink-nav: #e8a89c;     /* nav bar pink */
+pink-btn: #f0c4bc;     /* button color */
 ```
 
 Edit `index.html` to update:
