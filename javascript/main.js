@@ -1,5 +1,3 @@
-alert("JS LOADED");
-
 const allPages = ['home','order','how','sweets','contact'];
 const navIds = {
   order:  'nl-order',
