@@ -16,8 +16,16 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .cbadge { position: absolute; top: -7px; right: -9px; background: #e53935; color: #fff; font-size: .6rem; width: 16px; height: 16px; border-radius: 50%; display: none; align-items: center; justify-content: center; }
 .cbadge.on { display: flex; }
 
-.pg { display: none; min-height: calc(100vh - 50px); flex-direction: column; }
-.pg.act { display: flex; }
+.pg {
+  display: none;
+  min-height: calc(100vh - 50px);
+  flex-direction: column;
+}
+
+.pg.act {
+  display: flex;
+}
+
 .pink-bar { background: #e8a89c; height: 3px; flex-shrink: 0; }
 
 /* HOME */
@@ -55,17 +63,6 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .socials a:nth-child(2) { color: #c13584; }
 .socials a:nth-child(3) { color: #5865F2; }
 .socials a:hover { opacity: .7; }
-
-.pg {
-  display: none;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.pg.act {
-  display: flex;
-}
-
 .prod-card.disabled {
   cursor: not-allowed;
   opacity: 0.6;
