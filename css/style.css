@@ -48,7 +48,7 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .btn-gs { background: #f0c4bc; border: none; border-radius: 30px; padding: 12px 48px; font-family: 'Jost', sans-serif; font-size: .8rem; letter-spacing: .14em; cursor: pointer; transition: background .2s, transform .2s; }
 .btn-gs:hover { background: #e8a89c; transform: scale(1.03); }
 
-.socials {
+/* .socials {
   display: flex;
   gap: 1.2rem;
 
@@ -63,10 +63,7 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .socials a:nth-child(2) { color: #c13584; }
 .socials a:nth-child(3) { color: #5865F2; }
 .socials a:hover { opacity: .7; }
-.prod-card.disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
+*/
 
 .prod-card-img img {
   width: 100%;
@@ -82,12 +79,14 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 /* HARD BLOCK interaction */
 .prod-card.disabled {
   pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 /* ORDER */
-#pg-order { flex-direction: column; }
 #pg-order {
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .order-wrap {
@@ -264,4 +263,23 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
   .contact-wrap { flex-direction: column; padding: 2rem 1.5rem; gap: 2rem; }
   .contact-l { flex: none; }
   .form-row { flex-direction: column; }
+}
+
+.social-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  border-top: 1px solid #f0e8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: 9999;
+}
+
+body {
+  padding-bottom: 60px;
 }
