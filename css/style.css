@@ -34,7 +34,6 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .socials a:nth-child(3) { color: #5865F2; }
 .socials a:hover { opacity: .7; }
 
-/* position socials footer */
 .pg {
   display: none;
   min-height: 100vh;
@@ -43,11 +42,6 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 
 .pg.act {
   display: flex;
-}
-
-/* push footer down */
-.pg-footer {
-  margin-top: auto;
 }
 
 .prod-card.disabled {
