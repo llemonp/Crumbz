@@ -37,7 +37,7 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 /* position socials footer */
 .pg {
   display: none;
-  min-height: calc(100vh - 50px);
+  min-height: 100vh;
   flex-direction: column;
 }
 
@@ -73,7 +73,13 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 
 /* ORDER */
 #pg-order { flex-direction: column; }
-.order-wrap { display: flex; flex: 1; }
+#pg-order {
+  min-height: 100vh;
+}
+
+.order-wrap {
+  flex: 1 0 auto;
+}
 .sidebar { width: 210px; background: #f5d5d0; padding: 2rem 1.2rem; flex-shrink: 0; }
 .sidebar-lbl { font-size: .7rem; letter-spacing: .08em; color: #555; margin-bottom: .8rem; }
 .cat-list { list-style: none; }
