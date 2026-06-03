@@ -280,17 +280,11 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
   z-index: 9999;
 }
 
-.social-bar a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1a1a1a;
-  transition: opacity 0.2s;
-}
-
-.social-bar a:hover {
-  opacity: 0.6;
-}
+.socials a { text-decoration: none; transition: opacity .2s; display: flex; }
+.socials a:nth-child(1) { color: #1da1f2; }
+.socials a:nth-child(2) { color: #c13584; }
+.socials a:nth-child(3) { color: #5865F2; }
+.socials a:hover { opacity: .7; }
 
 body {
   padding-bottom: 60px;
