@@ -2,6 +2,8 @@
 
 An interactive baking website built from a Figma prototype.
 
+Firebase will be used for admin control, and GitHub will be used for user interactions.
+
 ## Pages
 - **Home**: landing page with navigation bar and Get Started button
 - **Order Online**: Sidebar category nav with product details and Add to Cart
