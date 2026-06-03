@@ -40,7 +40,6 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .btn-gs { background: #f0c4bc; border: none; border-radius: 30px; padding: 12px 48px; font-family: 'Jost', sans-serif; font-size: .8rem; letter-spacing: .14em; cursor: pointer; transition: background .2s, transform .2s; }
 .btn-gs:hover { background: #e8a89c; transform: scale(1.03); }
 
-
 .socials {
   display: flex;
   gap: 1.2rem;
@@ -234,7 +233,7 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; }
 .btn-send:hover { background: #e8a89c; }
 
 /* FOOTER */
-.pg-footer { display: flex; justify-content: center; gap: 1.2rem; padding: 1.5rem; border-top: 1px solid #f0e8e6; flex-shrink: 0; }
+.pg-footer { display: flex; justify-content: center; gap: 1.2rem; padding: 1.5rem; border-bottom: 1px solid #f0e8e6; flex-shrink: 0; }
 .pg-footer a { display: flex; text-decoration: none; transition: opacity .2s; color: #1a1a1a; }
 .pg-footer a:nth-child(1) { color: #1da1f2; }
 .pg-footer a:nth-child(2) { color: #c13584; }
