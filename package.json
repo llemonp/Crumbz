@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/llemonp/Crumbz/issues"
   },
-  "homepage": "https://github.com/llemonp/Crumbz#readme"
+  "homepage": "https://github.com/llemonp/Crumbz#readme",
+  "dependencies": {
+    "firebase": "^12.14.0"
+  }
 }
