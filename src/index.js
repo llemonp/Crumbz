@@ -1,8 +1,8 @@
 import { initializeApp } from 'firebase/app';
 
-// in the future protect this data through a separate web
+// keep apiKey hidden so data is secure
 const firebaseConfig = {
-    apiKey: "AIzaSyBWMcPF7s_QvAu-0GZe_j5p9_y0TxlUeVY",
+    apiKey: API_KEY,
     authDomain: "crumbz-c6eb9.firebaseapp.com",
     projectId: "crumbz-c6eb9",
     storageBucket: "crumbz-c6eb9.firebasestorage.app",
