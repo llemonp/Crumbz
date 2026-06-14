@@ -10,5 +10,14 @@ module.exports = {
     path: path.resolve(__dirname, 'javascript')
   },
 
-  devtool: 'source-map'
+  devtool: 'source-map',
+
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        type: 'javascript/auto'
+      }
+    ]
+  }
 };
