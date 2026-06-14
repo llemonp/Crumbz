@@ -1,6 +1,5 @@
 require('dotenv').config();
 const webpack = require('webpack');
-
 const path = require('path');
 
 module.exports = {
@@ -13,28 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, 'javascript')
   },
 
-  devtool: 'source-map',
-
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        type: 'javascript/auto'
-      }
-    ]
-  },
-
-  resolve: {
-    extensions: ['.js'],
-    mainFields: ['module', 'main']
-  },
-
-  // firebase file will work and API_KEY is assigned the hidden variable
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": {
-        API_KEY: JSON.stringify(process.env.API_KEY)
-      }
+      "process.env.API_KEY": JSON.stringify(process.env.API_KEY)
     })
   ]
 };

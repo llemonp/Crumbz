@@ -1,4 +1,5 @@
-console.log("SCRIPT STARTED");
+// test
+console.log("API KEY:", process.env.API_KEY);
 
 // ===== PAGE NAV =====
 const allPages = ['home','order','how','sweets','contact','cart'];
