@@ -4,8 +4,8 @@
   "description": "An interactive baking website built from a Figma prototype.",
   "main": "index.js",
   "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "build": "webpack --config webpack.config.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/llemonp/Crumbz#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "firebase": "^12.14.0"
   },
   "devDependencies": {
