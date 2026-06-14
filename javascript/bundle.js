@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const firebaseConfig = {
-  apiKey: API_KEY,
+  apiKey: process.env.API_KEY,
   authDomain: "crumbz-c6eb9.firebaseapp.com",
   projectId: "crumbz-c6eb9",
   storageBucket: "crumbz-c6eb9.firebasestorage.app",
@@ -40530,6 +40530,8 @@ var __webpack_exports__ = {};
   \****************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _firebase_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./firebase.js */ "./javascript/firebase.js");
+console.log("SCRIPT STARTED");
+
 // import firebase into application
 
 
