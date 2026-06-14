@@ -1,5 +1,5 @@
 // import firebase into application
-import { auth, db } from './firebase.js';
+import { firebaseConfig } from './firebase.js';
 
 // ===== PAGE NAV =====
 const allPages = ['home','order','how','sweets','contact','cart'];
