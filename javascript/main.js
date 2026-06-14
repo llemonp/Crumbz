@@ -1,3 +1,5 @@
+console.log("SCRIPT STARTED");
+
 // import firebase into application
 import { firebaseConfig } from './firebase.js';
 
