@@ -14,7 +14,10 @@ function goPage(id) {
   id === 'home' ? logo.classList.remove('vis') : logo.classList.add('vis');
   if (id === 'cart') renderCart();
   window.scrollTo(0, 0);
+
 }
+
+window.goPage = goPage;
 
 // ===== SIDEBAR CATEGORIES =====
 function showCat(cat, el) {
@@ -363,3 +366,7 @@ window.addEventListener('load', () => {
   initCanvas();
   initDecorDrag();
 });
+
+window.goPage = goPage;
+window.showCat = showCat;
+window.addToCart = addToCart;
