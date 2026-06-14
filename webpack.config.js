@@ -12,12 +12,8 @@ module.exports = {
 
   devtool: 'source-map',
 
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        type: 'javascript/auto'
-      }
-    ]
+  resolve: {
+    extensions: ['.js'],
+    mainFields: ['module', 'main']
   }
 };
