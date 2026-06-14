@@ -1,8 +1,5 @@
 console.log("SCRIPT STARTED");
 
-// import firebase into application
-import { firebaseConfig } from './firebase.js';
-
 // ===== PAGE NAV =====
 const allPages = ['home','order','how','sweets','contact','cart'];
 const navIds = { order:'nl-order', how:'nl-how', sweets:'nl-sweets', contact:'nl-contact' };
