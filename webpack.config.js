@@ -1,4 +1,7 @@
 require('dotenv').config();
+
+console.log("API_KEY from env:", process.env.API_KEY);
+
 const webpack = require('webpack');
 const path = require('path');
 
