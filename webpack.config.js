@@ -1,9 +1,11 @@
-require('dotenv').config();
+const path = require('path');
+const webpack = require('webpack');
+
+require('dotenv').config({
+  path: path.resolve(__dirname, 'src/.env')
+});
 
 console.log("API_KEY from env:", process.env.API_KEY);
-
-const webpack = require('webpack');
-const path = require('path');
 
 module.exports = {
   mode: 'development',
