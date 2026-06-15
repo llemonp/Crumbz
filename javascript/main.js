@@ -370,3 +370,4 @@ window.addEventListener('load', () => {
 window.goPage = goPage;
 window.showCat = showCat;
 window.addToCart = addToCart;
+window.openDetail = openDetail;
