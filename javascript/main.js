@@ -1,6 +1,3 @@
-// test
-console.log("API KEY:", process.env.API_KEY);
-
 // ===== PAGE NAV =====
 const allPages = ['home','order','how','sweets','contact','cart'];
 const navIds = { order:'nl-order', how:'nl-how', sweets:'nl-sweets', contact:'nl-contact' };
