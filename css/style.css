@@ -191,6 +191,133 @@ body { font-family: 'Jost', sans-serif; color: #1a1a1a; background: #fff; paddin
 .btn-send { background: #f0c4bc; border: none; border-radius: 30px; padding: 12px 44px; font-family: 'Jost', sans-serif; font-size: .78rem; letter-spacing: .14em; cursor: pointer; align-self: flex-end; transition: background .2s; }
 .btn-send:hover { background: #e8a89c; }
 
+/* SENT POPUP */
+.sent-overlay {
+  position: fixed; inset: 0;
+  background: rgba(249,221,217,.7);
+  z-index: 300;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.sent-overlay.open { display: flex; }
+
+.sent-box {
+  background: #fdf0ee;
+  border-radius: 12px;
+  width: 380px;
+  height: 260px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sent-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #1a1a1a;
+  line-height: 1;
+}
+.sent-close:hover { opacity: .6; }
+
+/* ENVELOPE */
+.envelope {
+  position: relative;
+  width: 200px;
+  height: 140px;
+  animation: envPop .4s ease forwards;
+}
+
+@keyframes envPop {
+  from { opacity: 0; transform: scale(.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.envelope-back {
+  position: absolute;
+  inset: 0;
+  background: #f5c2b8;
+  border-radius: 4px;
+}
+
+/* letter peeking out */
+.envelope-letter {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 72%;
+  height: 80px;
+  background: #fff;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: letterRise .5s .2s ease forwards;
+  opacity: 0;
+  z-index: 2;
+}
+
+@keyframes letterRise {
+  from { opacity: 0; bottom: 30%; }
+  to   { opacity: 1; bottom: 45%; }
+}
+
+.envelope-letter span {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: .1em;
+  color: #1a1a1a;
+}
+
+/* front flap fold lines */
+.envelope-front-left {
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 70px 0 0 100px;
+  border-color: transparent transparent transparent #f0b8ac;
+  z-index: 3;
+}
+
+.envelope-front-right {
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 70px 100px 0 0;
+  border-color: transparent #f0b8ac transparent transparent;
+  z-index: 3;
+}
+
+.envelope-bottom {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 50%;
+  background: #eaada0;
+  border-radius: 0 0 4px 4px;
+  z-index: 4;
+}
+
+/* top flap (open) */
+.envelope-back::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0 100px 65px 100px;
+  border-color: transparent transparent #e8a89c transparent;
+  z-index: 1;
+}
+
 /* DELETE POPUP */
 .delete-overlay { position: fixed; inset: 0; background: rgba(240,200,195,.6); z-index: 200; display: none; align-items: center; justify-content: center; }
 .delete-overlay.open { display: flex; }
