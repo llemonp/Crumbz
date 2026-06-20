@@ -352,8 +352,15 @@ function confirmDelete() {
 }
 
 function sendMsg() {
-  alert("Message sent! We'll get back to you soon. 🍰");
-  document.querySelectorAll('#pg-contact input, #pg-contact textarea').forEach(i => i.value = '');
+  const inputs = document.querySelectorAll('#pg-contact input, #pg-contact textarea');
+  document.getElementById('sent-overlay').classList.add('open');
+  inputs.forEach(i => i.value = '');
+  const radios = document.querySelectorAll('#pg-contact input[type="radio"]');
+  radios.forEach(r => r.checked = false);
+}
+
+function closeSent() {
+  document.getElementById('sent-overlay').classList.remove('open');
 }
 
 // ===== INIT =====
