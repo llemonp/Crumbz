@@ -349,8 +349,9 @@ function confirmDelete() {
   renderCart();
 }
 
-function sendMsg() {
+async function sendMsg() {
   const message = document.querySelector('#pg-contact textarea');
+
   if (!message || message.value.trim() === '') {
     message.style.borderBottomColor = '#e53935';
     message.placeholder = 'Please write a message before sending..';
@@ -360,9 +361,40 @@ function sendMsg() {
     }, 3000);
     return;
   }
-  document.getElementById('sent-overlay').classList.add('open');
-  document.querySelectorAll('#pg-contact input, #pg-contact textarea').forEach(i => i.value = '');
-  document.querySelectorAll('#pg-contact input[type="radio"]').forEach(r => r.checked = false);
+
+  const firstName = document.querySelector('#pg-contact input[placeholder="Austin"]').value.trim();
+  const lastName  = document.querySelector('#pg-contact input[placeholder="Doe"]').value.trim();
+  const email     = document.querySelector('#pg-contact input[type="email"]').value.trim();
+  const phone     = document.querySelector('#pg-contact input[type="tel"]').value.trim();
+  const subjectEl = document.querySelector('#pg-contact input[name="subj"]:checked');
+
+  const btn = document.querySelector('.btn-send');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  try {
+    await window.fsAddDoc(window.fsCollection(window.db, 'messages'), {
+      firstName,
+      lastName,
+      email,
+      phone,
+      subject: subjectEl ? subjectEl.value : 'General Inquiry',
+      message: message.value.trim(),
+      timestamp: window.fsTimestamp(),
+      read: false,
+    });
+
+    document.getElementById('sent-overlay').classList.add('open');
+    document.querySelectorAll('#pg-contact input, #pg-contact textarea').forEach(i => i.value = '');
+    document.querySelectorAll('#pg-contact input[type="radio"]').forEach(r => r.checked = false);
+
+  } catch (err) {
+    console.error('Error saving message:', err);
+    alert('Something went wrong. Please try again.');
+  } finally {
+    btn.textContent = 'Send Message';
+    btn.disabled = false;
+  }
 }
 
 function closeSent() {
