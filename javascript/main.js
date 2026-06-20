@@ -14,8 +14,6 @@ function goPage(id) {
 
 }
 
-window.goPage = goPage;
-
 // ===== SIDEBAR CATEGORIES =====
 function showCat(cat, el) {
   document.querySelectorAll('.cat-list li').forEach(l => l.classList.remove('act'));
@@ -352,11 +350,19 @@ function confirmDelete() {
 }
 
 function sendMsg() {
-  const inputs = document.querySelectorAll('#pg-contact input, #pg-contact textarea');
+  const message = document.querySelector('#pg-contact textarea');
+  if (!message || message.value.trim() === '') {
+    message.style.borderBottomColor = '#e53935';
+    message.placeholder = 'Please write a message before sending..';
+    setTimeout(() => {
+      message.style.borderBottomColor = '';
+      message.placeholder = 'Write your message..';
+    }, 3000);
+    return;
+  }
   document.getElementById('sent-overlay').classList.add('open');
-  inputs.forEach(i => i.value = '');
-  const radios = document.querySelectorAll('#pg-contact input[type="radio"]');
-  radios.forEach(r => r.checked = false);
+  document.querySelectorAll('#pg-contact input, #pg-contact textarea').forEach(i => i.value = '');
+  document.querySelectorAll('#pg-contact input[type="radio"]').forEach(r => r.checked = false);
 }
 
 function closeSent() {
