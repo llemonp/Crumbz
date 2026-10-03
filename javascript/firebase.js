@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "crumbz-5edb8.firebaseapp.com",
   projectId: "crumbz-5edb8",
   storageBucket: "crumbz-5edb8.firebasestorage.app",
