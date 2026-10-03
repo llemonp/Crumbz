@@ -1,4 +1,5 @@
+node_modules/
+website-crumbz/node_modules/
 .env
 .env.local
-node_modules/
 dist/
